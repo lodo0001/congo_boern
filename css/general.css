@@ -18,6 +18,11 @@
     src: url("../fonts/IBMPlexSansThaiLooped-Bold.ttf");
 }
 
+@font-face {
+    font-family: ibm-plex-med;
+    src: url("../fonts/IBMPlexSansThaiLooped-Medium.ttf");
+}
+
 h1 {
     font-family: karu;
 }
@@ -28,4 +33,62 @@ h2, h3, h4 {
 
 p {
     font-family: ibm-plex;
+}
+
+body {
+    margin: 0;
+}
+
+/* Navbar */
+nav {
+    overflow-x: hidden;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: ibm-plex-med;
+    color: black;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3vw;
+    width: 100vw;
+    margin: 0 0 0 10px;
+    padding: 0;
+}
+
+nav img {
+    height: 100px;
+    width: auto;
+}
+
+nav svg {
+    height: 30px;
+    width: auto;
+}
+
+.donationBar {
+    background-color: var(--orange);
+    padding: 5px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.donationContainer {
+    margin-right: 2vw;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    align-items: center;
+}
+
+.arrow {
+    height: 15px;
+    width: auto;
+    margin-left: 10px;
 }
