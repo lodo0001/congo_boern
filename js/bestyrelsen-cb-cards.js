@@ -26,7 +26,7 @@ function showCards1(cards) {
     </p>
     <p class="education">Profession: Børne- og familiekonsulent</p>
     <div class="btn-container">
-      <a href="" class="gina-btn">Læs ginas historie</a>
+      <a href="gina.html" class="gina-btn">Læs ginas historie</a>
     </div>
   </article>`;
   

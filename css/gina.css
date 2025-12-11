@@ -1,0 +1,49 @@
+.hero, .history {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+}
+
+.hero-headline {
+    text-align: center;
+}
+
+.hero-headline, .sub-headline {
+    font-family: karu;
+    text-transform: uppercase;
+    font-size: 32px;
+}
+
+
+.hero-text {
+    text-align: center;
+    font-family: ibm-plex-med;
+}
+
+.hero-img, .history-img {
+    width: 100vw;
+}
+
+.quote {
+    background-color: var(--blue);
+    color: white;
+    padding: 20px 40px;
+    margin-top: 0;
+    line-height: 28px;
+}
+
+.dream-content {
+    margin: 0 40px;
+}
+
+.history-text {
+    margin: 16px 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
