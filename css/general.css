@@ -40,6 +40,16 @@ body {
 }
 
 /* Navbar */
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
 nav {
     overflow-x: hidden;
 }
@@ -47,23 +57,38 @@ nav {
 nav a {
     text-decoration: none;
     font-family: ibm-plex-med;
+    font-size: 16px;
     color: black;
     text-transform: uppercase;
 }
+
+nav ul a {
+    transition: color 0.3s ease;
+}
+
+nav ul a:hover {
+    color: var(--orange);
+}
+
 
 nav ul {
     list-style: none;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 3vw;
-    width: 100vw;
-    margin: 0 0 0 10px;
-    padding: 0;
+    gap: 2.5vw;
+    width: 100%;
+    margin: 0;
+    padding: 15px 0;
+    padding-left: 3vw;
+}
+
+nav ul li:last-child {
+    margin-left: 40vw;
 }
 
 nav img {
-    height: 100px;
+    height: 70px;
     width: auto;
 }
 
@@ -80,15 +105,97 @@ nav svg {
 }
 
 .donationContainer {
-    margin-right: 2vw;
     display: flex;
     flex-direction: row;
     gap: 2vw;
     align-items: center;
 }
 
+.donation {
+    margin-right: 15px;
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+
+.donation:hover {
+    transform: translateX(5px);
+}
+
+
 .arrow {
     height: 15px;
     width: auto;
     margin-left: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #F1EDDE;
+}
+
+.footer-container {
+    margin: 0 3vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-text {
+    margin: 0;
+}
+
+.footer-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.footer-text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-subheadline {
+    text-align: center;
+}
+
+.footer-subheadline, .footer-headline {
+    text-transform: uppercase;
+}
+
+.footer-sponsor-pic-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-pic-left, .footer-pic-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-text {
+    text-transform: uppercase;
+    font-family: ibm-plex-bold;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: row;
+    margin: 2vw 3vw 0;
+    justify-content: space-between;
+    padding-bottom: 2vw;
+}
+
+.socials {
+    display: flex;
+    gap: 10px;
+}
+
+.payment-icon, .social-icon {
+    height: 50px;
+    width: auto;
+}
+
+.social-icon {
+    cursor: pointer;
 }
