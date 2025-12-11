@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/nyhedview.css" />
-    <title>Nyhed</title>
+    <link rel="stylesheet" href="css/kontakt.css" />
+    <title>Kontakt</title>
   </head>
   <body>
     <header>
@@ -68,61 +68,40 @@
       </nav>
     </header>
     <main>
-      <section class="nyhedfoto">
-        <img src="img/nyhedview_1.png" alt="1.billede" />
+      <section class="kontaktfoto">
+        <img src="img/kontakt.png" alt="fællesfoto" />
       </section>
-      <section class="nyhedbody">
-        <h1>
-          Styrket humanitær indsats i krigsramte områder i Øst-DR Congo og
-          Kinshasa.
-        </h1>
-        <h6>09.02.2025</h6>
-        <p>
-          I en tid med stigende konflikter og humanitære udfordringer i DR Congo
-          er det afgørende at række ud til de mest sårbare. Derfor sætter vi i
-          Congos Børn ind med en ekstraordinær indsats. Ud over vores faste
-          arbejde med børnehjemmet samarbejder vi nu tæt med vores lokale
-          medlemmer og netværk i Kinshasa for at hjælpe de mange familier, der
-          er ramt af krigen i øst.
-        </p>
-
-        <figure>
-          <img src="img/nyhedview_2.png" alt="kvinder" />
-          <figcaption class="undertekst">
-            Billede lånt fra Information
-          </figcaption>
-        </figure>
-
-        <p>
-          Konflikten har efterladt utallige familier i en desperat situation. Vi
-          arbejder for at sikre mad, rent drikkevand og medicinsk førstehjælp
-          til de krigsramte. Samtidig fortsætter vores langsigtede indsats –
-          børnehjemmet i Kinshasa er stadig kernen i vores mission, men vi
-          mobiliserer nu ekstra ressourcer for at gøre en endnu større forskel.
-        </p>
-        <p>
-          Et vigtigt fokusområde er sanitet og hygiejne, især for kvinder og
-          piger, der ofte er ekstra udsatte. Adgang til menstruationsbind og
-          andre hygiejneprodukter er afgørende for sundhed og værdighed.
-        </p>
-        <figure>
-          <img src="img/nyhedview_3.png" alt="grav" />
-          <figcaption class="undertekst">Billede lånt fra DR</figcaption>
-        </figure>
-        <p>
-          For at forstå behovene i regionen har vi afholdt møder med lokale
-          aktører. Sidste år deltog vores forkvinde Gina og sekretær Kim i FN’s
-          Civil Society Forum i Kenya, hvor de mødte NGO’er fra Goma. Sammen med
-          vores samarbejdspartner Jacque har vi udviklet strategier for at
-          støtte både de krigsramte i øst og de familier, der har søgt tilflugt
-          i Kinshasa.
-        </p>
-        <p>
-          Vores vision er at skabe varige forandringer gennem fælles indsats. Vi
-          stræber efter at genopbygge samfund, fremme stabilitet og sikre, at
-          børn, kvinder og familier får den nødvendige støtte til at komme
-          videre.
-        </p>
+      <section class="form-section">
+        <article class="form-info">
+          <h1>VI HØRER GERNE FRA DIG</h1>
+          <h2>KONTAKT OS PÅ MAIL ELLER LIGE HER</h2>
+          <h3>MAIL: info@congosboern.dk</h3>
+          <form class="form">
+            <div class="navn">
+              <label for="f-name">NAVN*</label>
+              <br />
+              <input id="f-name" name="f-name" type="text" required />
+            </div>
+            <div class="email">
+              <label for="email"
+                >EMAIL*
+                <br />
+              </label>
+              <input id="email" name="email" type="email" required />
+            </div>
+            <div class="besked">
+              <label for="bigText">BESKED*</label>
+              <br />
+              <textarea
+                id="bigText2"
+                name="bigText"
+                rows="5"
+                cols="50"
+              ></textarea>
+            </div>
+            <button class="submit_btn" type="submit">SEND AFSTED</button>
+          </form>
+        </article>
       </section>
     </main>
     <footer>
