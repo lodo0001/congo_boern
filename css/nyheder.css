@@ -1,0 +1,71 @@
+/* css til mobil */
+h1 {
+  font-size: 35px;
+}
+
+h6 {
+  font-family: ibm-plex;
+  font-size: 15px;
+  margin-top: 9px;
+}
+
+h3 {
+  font-family: karu;
+  font-size: 25px;
+  margin-top: -35px;
+  padding-bottom: 2rem;
+}
+
+.flere_nyheder {
+  padding: 30px;
+}
+
+.flere_nyheder img {
+  width: 100%;
+  height: 300px;
+}
+
+.flere_nyheder a {
+  text-decoration: none;
+  color: black;
+}
+
+/* css til computer */
+@media (min-width: 1024px) {
+  h6 {
+    margin-top: 2px;
+  }
+
+  .flere_nyheder {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  .grid_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding-bottom: 2rem;
+  }
+
+  .grid_2 img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .grid_3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 5rem;
+  }
+
+  .grid_3 img {
+    width: 100%;
+    height: 230px;
+  }
+
+  .grid_3 h3 {
+    font-size: 20px;
+  }
+}
