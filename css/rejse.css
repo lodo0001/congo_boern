@@ -1,0 +1,7 @@
+/* css til rejse videoen */
+
+.rejse_video video {
+  width: 100%;
+  height: 600px;
+  background-color: #f1edde;
+}
