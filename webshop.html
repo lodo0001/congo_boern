@@ -71,6 +71,27 @@
     <main>
       <h1>WEBSHOP</h1>
       <section class="productlist"></section>
+      <!-- html til når man klikker på et produkt, så popper der et kort frem med produktet -->
+      <dialog class="productview">
+        <span class="close_btn">&times;</span>
+        <img class="product_img" src="" alt="" />
+        <div class="product_info">
+          <h3 class="product_name"></h3>
+          <p class="product_price"></p>
+          <p class="product_description"></p>
+          <div class="btn_antal">
+            <p>ANTAL</p>
+            <input
+              type="number"
+              class="antal"
+              value="1"
+              min="1"
+              tabindex="-1"
+            />
+          </div>
+          <button class="btn_kurv">LÆG I KURV</button>
+        </div>
+      </dialog>
     </main>
     <footer>
       <section class="footer-container">
