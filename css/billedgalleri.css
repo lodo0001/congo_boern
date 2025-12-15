@@ -1,0 +1,156 @@
+/* css til mobil */
+.til_computer {
+  display: none;
+}
+
+main {
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-top: 5rem;
+}
+
+.til_mobil img {
+  width: 100%;
+}
+
+.btn {
+  background-color: #f28627;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  width: 220px;
+  font-family: ibm-plex-bold;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 3.5rem;
+}
+
+.btn:hover {
+  background-color: rgb(210, 92, 49);
+}
+
+/* css til computer */
+@media (min-width: 1024px) {
+  .til_mobil {
+    display: none;
+  }
+
+  main {
+    padding-left: 180px;
+    padding-right: 180px;
+    margin-top: 8rem;
+    margin-bottom: -200px;
+  }
+
+  h1 {
+    font-size: 40px;
+    padding-bottom: 3rem;
+  }
+
+  .til_computer {
+    display: block;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .til_computer img {
+    width: 30%;
+  }
+
+  #foto2 {
+    position: relative;
+    top: -282px;
+    left: 13px;
+  }
+
+  #foto3 {
+    position: relative;
+    top: -217px;
+    left: 30px;
+    width: 35%;
+  }
+
+  #foto4 {
+    position: relative;
+    top: 15px;
+    left: 1px;
+    width: 30%;
+  }
+
+  #foto5 {
+    position: relative;
+    top: -280px;
+    left: 13px;
+    width: 30%;
+  }
+
+  #foto6 {
+    position: relative;
+    top: -465px;
+    left: 30px;
+    width: 35%;
+  }
+
+  #foto7 {
+    position: relative;
+    top: 28px;
+    left: 1px;
+    width: 30%;
+  }
+
+  #foto8 {
+    position: relative;
+    top: -718px;
+    left: 15px;
+    width: 30%;
+  }
+
+  #foto9 {
+    position: relative;
+    top: -500px;
+    left: 30px;
+    width: 35%;
+  }
+
+  #foto10 {
+    position: relative;
+    top: -770px;
+    left: 352px;
+    width: 30%;
+  }
+
+  #foto11 {
+    position: relative;
+    top: -483px;
+    left: 368px;
+    width: 35%;
+  }
+
+  #foto12 {
+    position: relative;
+    top: -529px;
+    left: -378px;
+    width: 30%;
+  }
+
+  #foto13 {
+    position: relative;
+    top: -510px;
+    left: 352px;
+    width: 30%;
+  }
+
+  .btn {
+    background-color: #f28627;
+    color: white;
+    border-radius: 20px;
+    width: 220px;
+    font-family: ibm-plex-bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    left: 25rem; /* flytter horisontalt */
+    top: -400px;
+  }
+}

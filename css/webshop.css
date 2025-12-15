@@ -1,0 +1,217 @@
+/* css til mobil */
+main {
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+}
+
+.product img {
+  width: 100%;
+}
+
+.product {
+  margin-bottom: 5rem;
+}
+
+h1 {
+  font-family: karu;
+  font-size: 55px;
+  text-align: center;
+}
+
+h3 {
+  margin-top: 2px;
+  margin-left: 0.2rem;
+}
+
+p {
+  text-align: end;
+  font-size: 20px;
+  margin-top: -26px;
+}
+
+.product_link {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.product:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: 0.2s;
+}
+
+.btn {
+  background-color: #233051;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  width: 340px;
+  font-family: ibm-plex-bold;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.btn:hover {
+  background-color: #404b65;
+}
+
+/* css til computer */
+@media (min-width: 1024px) {
+  .productlist {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 23px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 9rem;
+  }
+
+  .product img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .product {
+    padding-bottom: 3rem;
+    margin: 1rem;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 340px;
+  }
+}
+
+/* css til productview (mobil) */
+.productview {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+
+  width: 80%;
+  max-width: 1000px;
+  max-height: 80vh;
+
+  background-color: #f1edde;
+  overflow-y: auto;
+  border-radius: 1%;
+}
+
+.productview::backdrop {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.productview img {
+  width: 100%;
+  margin-top: 4rem;
+}
+
+.productview .modal-content {
+  position: relative;
+}
+
+.close_btn {
+  font-size: 50px;
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  /font-weight: bold;
+  cursor: pointer;
+}
+
+.product_description {
+  font-size: 15px;
+  margin-top: 3rem;
+  text-align: left;
+  padding-left: 5px;
+  padding-right: 10px;
+}
+
+.antal {
+  background-color: #233051;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  width: 280px;
+  font-family: ibm-plex-bold;
+  border: none;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 4rem;
+}
+
+.btn_antal p {
+  position: relative;
+  top: 75px;
+  left: -345px;
+  color: black;
+  font-size: 15px;
+  font-family: ibm-plex-bold;
+}
+
+.minus,
+.plus {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #233051;
+  color: white;
+  padding-left: 1.3rem;
+}
+
+.btn_kurv {
+  background-color: #f28627;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  width: 300px;
+  font-family: ibm-plex-bold;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+@media (min-width: 1024px) {
+  /* havde lidt små-problemer hvor display:grid gik ind og drillede vores js til siden, men vha dialog.productview[open], så gælder den kun på når man åbner på modalen:) */
+  dialog.productview[open] {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 3rem;
+
+    width: 100%;
+    max-width: 1000px;
+    padding: 3rem;
+    border-radius: 20px;
+  }
+
+  .productview img {
+    width: 70%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+  }
+
+  .product_price {
+    text-align: start;
+    margin-top: 2rem;
+    margin-left: 0.2rem;
+  }
+
+  .product_name {
+    font-size: 20px;
+  }
+
+  .btn_antal p {
+    position: relative;
+    top: 75px;
+    left: -465px;
+  }
+}
