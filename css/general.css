@@ -39,6 +39,15 @@ body {
     margin: 0;
 }
 
+/* Navbar - mobil */
+nav li {
+    display: none;
+}
+
+nav li:first-child, nav li:last-child {
+    display: inline-block;
+}
+
 /* Footer - mobil */
 footer {
     background-color: #F1EDDE;
@@ -149,7 +158,14 @@ footer {
         color: var(--orange);
     }
 
+    nav li {
+        display: inline-block;
+    }
 
+    nav li:last-child {
+        display: none;
+    }
+    
     nav ul {
         list-style: none;
         display: flex;
