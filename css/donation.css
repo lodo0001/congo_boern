@@ -1,0 +1,184 @@
+p,
+h2,
+h3 {
+    margin: 20px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+/* Valgmuligheder for donation */
+
+img {
+    width: 80%;
+}
+
+.valgmuligheder {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+}
+
+/* Bliv fadder */
+.fadder {
+    background-color: rgba(35, 48, 81, 1);
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.fadder p {
+    color: white;
+}
+
+.fadder h2 {
+    color: rgba(242, 134, 39, 1);
+}
+
+
+#underline {
+    text-decoration: underline;
+    text-align: center;
+
+}
+
+/* Giv et bidrag */
+.bidrag {
+    background-color: rgba(241, 237, 222, 1);
+    display: grid;
+    grid-template-columns: 1fr;
+    color: rgba(35, 48, 81, 1);
+}
+
+
+/* Medlem */
+.medlem {
+    background-color: rgba(35, 48, 81, 1);
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.medlem h2 {
+    color: rgba(242, 134, 39, 1);
+}
+
+.medlem p {
+    color: white;
+}
+
+label {
+    color: white;
+
+}
+
+.form_medlem {
+    margin: 20px;
+    font-family: ibm-plex-bold;
+}
+
+form {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    font-family: ibm-plex-bold;
+}
+
+.form input {
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    width: 300px;
+    height: 40px;
+    font-family: ibm-plex;
+    border: none;
+    outline: none;
+}
+
+.navn,
+.email {
+    margin-bottom: 2rem;
+}
+
+.besked {
+    padding-bottom: 40px;
+}
+
+#bigText2 {
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    width: 300px;
+    height: 120px;
+    font-family: ibm-plex;
+    border: none;
+    outline: none;
+}
+
+button {
+    background-color: #f28627;
+    color: white;
+    border-radius: 20px;
+    width: 130px;
+    font-family: ibm-plex-bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+
+/* Virksomhed */
+hr {
+    width: 50%;
+}
+
+.virksomhed {
+    background-color: rgba(241, 237, 222, 1);
+    padding-bottom: 20px;
+}
+
+.virksomhed h3 {
+    color: rgba(35, 48, 81, 1);
+}
+
+#venskabspartner {
+    background-color: white;
+    text-align: center;
+    margin: 25px;
+    padding: 9px;
+    border-radius: 20px;
+}
+
+/* Scan */
+#mobilepay {
+    width: 40%;
+}
+
+.sccan {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+
+/* BTN orange */
+.btn_orange {
+    background-color: rgba(242, 134, 39, 1);
+    border-radius: 30px;
+    width: 20%;
+    border: none;
+    cursor: pointer;
+    color: white;
+    margin: 20px;
+}
+
+/* BTN blå */
+.btn_blå {
+    background-color: rgba(35, 48, 81, 1);
+    border-radius: 30px;
+    width: 20%;
+    border: none;
+    cursor: pointer;
+    color: white;
+    margin: 20px;
+}
