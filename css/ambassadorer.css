@@ -1,0 +1,108 @@
+main {
+    margin: 40px;
+}
+
+#profile {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+#title_text {
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+}
+
+img {
+    width: 95%;
+    display: block;
+    margin: 20px auto 0;
+
+}
+
+.profile_img {
+    width: 80%;
+    justify-content: center;
+}
+
+h3 {
+    font-size: 20px;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        margin-left: 150px;
+        margin-right: 150px;
+        margin-top: 0;
+    }
+
+    p {
+        font-size: 17px;
+    }
+
+    h3 {
+        text-align: left;
+        font-size: 25px;
+    }
+
+    /* Introduktion + billeder med navn af ambassadørerne*/
+
+    #title_text {
+        width: 50%;
+    }
+
+    img {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+
+    #profile {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 130px;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        gap: 50px;
+    }
+
+    #profile h3 {
+        text-align: center;
+    }
+
+
+    /* Læs mere om dem */
+    .profile_img {
+        margin-top: 0;
+        width: 100%;
+        margin: 0;
+        display: block;
+    }
+
+
+
+    .læs_mere {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: start;
+        column-gap: 40px;
+        row-gap: 80px;
+    }
+
+    .læs_mere div {
+        text-align: left;
+    }
+
+    .læs_mere p {
+        width: 75%;
+        margin-top: 10px;
+
+    }
+
+    .læs_mere h3 {
+        margin-top: 0;
+    }
+
+
+}
