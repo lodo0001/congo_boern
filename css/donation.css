@@ -4,6 +4,8 @@ h3 {
     margin: 20px;
 }
 
+
+
 .center {
     display: flex;
     justify-content: center;
@@ -135,26 +137,41 @@ hr {
 .virksomhed {
     background-color: rgba(241, 237, 222, 1);
     padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .virksomhed h3 {
     color: rgba(35, 48, 81, 1);
 }
 
-#venskabspartner {
+.order {
+    order: 2;
+}
+
+.venskabspartner {
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     margin: 25px;
-    padding: 9px;
     border-radius: 20px;
+    width: 40%;
 }
+
+.venskabspartner p {
+    line-height: 5px;
+}
+
+
 
 /* Scan */
 #mobilepay {
     width: 40%;
 }
 
-.sccan {
+.scan {
     display: grid;
     grid-template-columns: 1fr;
 }
@@ -169,7 +186,8 @@ hr {
     border: none;
     cursor: pointer;
     color: white;
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* BTN blå */
@@ -180,5 +198,178 @@ hr {
     border: none;
     cursor: pointer;
     color: white;
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+
+    p {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+
+    h2,
+    p {
+        margin-left: 150px;
+        margin-right: 150px;
+        width: 80%;
+    }
+
+    /* Valgmuligheder for donation */
+    .valgmuligheder img {
+        width: 50%;
+    }
+
+    /* Fadder */
+
+
+    .fadder {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 30px;
+
+    }
+
+    .fadder img {
+        width: 50%;
+        object-fit: contain;
+
+    }
+
+    #underline {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        order: 1;
+        cursor: pointer;
+        margin-top: 0;
+    }
+
+    /* Bidrag */
+
+    .bidrag {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        padding: 80px;
+    }
+
+    .bidrag img {
+        width: 100%;
+        margin: 0;
+    }
+
+    .bidrag_text {
+        order: 2;
+        padding-left: 100px;
+        padding-right: 20px;
+        width: 70%;
+    }
+
+    .bidrag img {
+        width: 100%;
+        padding-left: 180px;
+        object-fit: contain;
+    }
+
+
+
+
+    /* Medlem */
+
+    .medlem {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 30px;
+    }
+
+    form {
+        padding-top: 80px;
+        padding-bottom: 0;
+    }
+
+    .btn_orange {
+        background-color: rgba(242, 134, 39, 1);
+        border-radius: 30px;
+        width: 20%;
+        border: none;
+        cursor: pointer;
+        color: white;
+        margin: 20px auto;
+        font-size: 15px;
+    }
+
+    /* Virksomhed */
+    .virksomhed {
+        padding: 30px;
+
+    }
+
+    .støtte_donation p {
+        width: 100%;
+    }
+
+    .støtte_donation h3 {
+        font-size: 23px;
+    }
+
+    .virksomhed_text {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-left: 70px;
+        padding-right: 80px;
+        width: 80%;
+        padding-bottom: 30px;
+        margin-top: 40px;
+    }
+
+    .støtte_muligheder {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .virksomhed img {
+        width: 80%;
+        object-fit: contain;
+
+    }
+
+    .btn_blå {
+        background-color: rgba(35, 48, 81, 1);
+        border-radius: 30px;
+        width: 20%;
+        border: none;
+        cursor: pointer;
+        color: white;
+        margin: 20px auto;
+        font-size: 15px;
+    }
+
+
+
+    /* Scan */
+
+    .scan {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 90px;
+    }
+
+    .scan h2 {
+        font-size: 30px;
+    }
+
+    .scan p {
+        font-size: 20px;
+        width: 70%;
+    }
+
+    #mobilepay {
+        width: 50%;
+        object-fit: contain;
+    }
+
 }
