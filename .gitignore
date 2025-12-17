@@ -1,5 +1,17 @@
+git rm --cached .DS_Store
+git rm --cached img/.DS_Store
 img/Rejsen til DR Congo 2024.mp4
 img/.DS_Store
 css/index2.css
 .DS_Store
 .DS_Store
+git add .gitignore
+git commit -m "Resolve merge conflict by removing DS_Store"
+
+git status
+
+
+git rm --cached .DS_Store
+git rm --cached img/.DS_Store
+
+

@@ -72,7 +72,7 @@ function showProducts(products) {
     modal.close();
   });
 
-  // Luk ved klik på
+  // "Når brugeren klikker uden om området, så luk ned"
   modal.addEventListener("click", (e) => {
     if (e.target === modal) {
       modal.close();
