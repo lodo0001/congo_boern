@@ -58,6 +58,8 @@ h3 {
 
 .btn:hover {
   background-color: #404b65;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(16, 3, 70, 0.3);
 }
 
 /* css til computer */
@@ -100,6 +102,7 @@ h3 {
   background-color: #f1edde;
   overflow-y: auto;
   border-radius: 1%;
+  border: none;
 }
 
 .productview::backdrop {

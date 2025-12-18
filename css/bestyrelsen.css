@@ -1,67 +1,84 @@
 .headline {
-    text-transform: uppercase;
-    text-align: center;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
-.management-cb-section, .management-viga-section {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    justify-items: center;
+.management-cb-section,
+.management-viga-section {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
 }
 
 .management-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 10vw 2vw;
-    width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 10vw 2vw;
+  width: 80vw;
+  padding-bottom: 3rem;
 }
 
 .name {
-    font-family: karu;
-    font-size: 20px;
-    margin: 8px 0;
+  font-family: karu;
+  font-size: 25px;
+  margin: 8px 0;
 }
 
-.title, .education {
-    font-size: 14px;
-    margin: 0 0 10px;
+.title,
+.education {
+  font-size: 14px;
+  margin: 0 0 10px;
 }
 
 .gina-btn {
-    text-align: center;
-    text-decoration: none;
-    background-color: var(--blue);
-    color: white;
-    font-family: ibm-plex-med;
-    display: block;
-    padding: 5px 10px;
-    border-radius: 20px;
-    transition: transform 0.3s ease
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--blue);
+  color: white;
+  font-family: ibm-plex-med;
+  display: block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.gina-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(3, 13, 86, 0.3);
 }
 
 @media screen and (min-width: 768px) {
+  .headline {
+    font-size: 40px;
+  }
 
-    .management-cb-section, .management-viga-section {
-        grid-template-columns: repeat(3, 1fr);
-    }
+  .management-cb-section,
+  .management-viga-section {
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
 
-    .management-card {
-        justify-content: unset;
-        width: 20vw;
-        margin:0 0 2vw;
-    }
+  .management-card {
+    justify-content: unset;
+    width: 20vw;
+    margin: 0 0 2vw;
+  }
 
-    .name {
-        font-size: 24px;
-        margin: 16px 0;
-    }
+  .name {
+    font-size: 24px;
+    margin: 16px 0;
+  }
 
-    .title, .education {
-        margin: 0 0 20px;
-    }
+  .title,
+  .education {
+    margin: 0 0 20px;
+  }
 
-    .gina-btn:hover {
-        transform: translateY(-2px);
-    }
+  .gina-btn:hover {
+    transform: translateY(-2px);
+  }
 }

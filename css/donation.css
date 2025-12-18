@@ -1,510 +1,505 @@
 .paragraph,
 .header2,
 h3 {
-    margin: 20px;
+  margin: 20px;
 }
 
 main {
-    overflow-y: hidden;
+  overflow-y: hidden;
 }
 
 .center {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 /* Valgmuligheder for donation */
 
 .img {
-    width: 80%;
+  width: 80%;
 }
 
 .valgmuligheder {
-    display: grid;
-    justify-content: center;
-    text-align: center;
-    grid-template-columns: 1fr 1fr;
-    margin: 20px;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  grid-template-columns: 1fr 1fr;
+  margin: 20px;
 }
 
 .valgmulighed-btn {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .valgmulighed-btn a {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(241, 237, 222, 0.95);
-    color: rgba(35, 48, 81, 1);
-    padding: 20px;
-    text-align: center;
-    font-family: ibm-plex-bold;
-    font-size: 18px;
-    text-decoration: none;
-    margin: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(241, 237, 222, 0.95);
+  color: rgba(35, 48, 81, 1);
+  padding: 20px;
+  text-align: center;
+  font-family: ibm-plex-bold;
+  font-size: 18px;
+  text-decoration: none;
+  margin: 0;
 }
 
 /* Bliv fadder */
 .fadder {
-    background-color: rgba(35, 48, 81, 1);
-    display: grid;
-    grid-template-columns: 1fr;
+  background-color: rgba(35, 48, 81, 1);
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .fadder-text {
-    color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
-
 
 .fadder h2 {
-    color: rgba(242, 134, 39, 1);
+  color: rgba(242, 134, 39, 1);
 }
 
-
 #underline {
-    text-decoration: underline;
-    text-align: center;
-
+  text-decoration: underline;
+  text-align: center;
+  color: white;
+  padding-top: 2rem;
 }
 
 /* Giv et bidrag */
 .bidrag {
-    background-color: rgba(241, 237, 222, 1);
-    display: grid;
-    grid-template-columns: 1fr;
-    color: rgba(35, 48, 81, 1);
+  background-color: rgba(241, 237, 222, 1);
+  display: grid;
+  grid-template-columns: 1fr;
+  color: rgba(35, 48, 81, 1);
 }
 
 /* Donation */
 .donation-card {
-    display: block;
-    color: rgb(0, 0, 0);
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    background-color: rgba(241, 237, 222, 1);
-    margin: 0 5vw;
+  display: block;
+  color: rgb(0, 0, 0);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  background-color: rgba(241, 237, 222, 1);
+  margin: 0 5vw;
 }
 
 .donation-card:last-child {
-    background-color: var(--blue);
-    color: white;
+  background-color: var(--blue);
+  color: white;
 }
 
 .donation-card h3 {
-    font-family: ibm-plex-bold;
-    font-size: 18px;
-    margin: 0 0 25px 0;
-    text-align: center;
+  font-family: ibm-plex-bold;
+  font-size: 18px;
+  margin: 0 0 25px 0;
+  text-align: center;
 }
 
 .donation-card h3:first-child {
-    font-size: 32px;
+  font-size: 32px;
 }
 
 .donation-card p {
-    font-family: ibm-plex;
-    font-size: 14px;
-    margin-bottom: 20px;
-    text-align: center;
+  font-family: ibm-plex;
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 #fadder-donation-text {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .donation-options-fadder {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-    margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  margin-bottom: 50px;
 }
 
 .donation-options {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
-
 .donation-option {
-    background-color: rgba(255,255,255,0.1);
-    border: 2px solid rgba(255,255,255,0.3);
-    /* color: rgb(0, 0, 0); */
-    padding: 12px;
-    border-radius: 5px;
-    text-align: center;
-    font-family: ibm-plex-bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  /* color: rgb(0, 0, 0); */
+  padding: 12px;
+  border-radius: 5px;
+  text-align: center;
+  font-family: ibm-plex-bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .donation-option:hover,
 .donation-option.active {
-    background-color: rgba(255,255,255,0.2);
-    border-color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: white;
 }
 
 .monthly-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 20px;
-    font-family: ibm-plex;
-    font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  font-family: ibm-plex;
+  font-size: 14px;
 }
 
 .donate-submit {
-    background-color: white;
-    color: var(--blue);
-    width: 100%;
-    padding: 15px;
-    border-radius: 5px;
-    border: none;
-    font-family: ibm-plex-bold;
-    text-transform: uppercase;
-    font-size: 14px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
+  background-color: white;
+  color: var(--blue);
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  font-family: ibm-plex-bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 .donate-submit:hover {
-    transform: translateY(-2px);
+  transform: translateY(-2px);
 }
 
 textarea {
-    resize: none;
+  resize: none;
 }
 
 #bidrag-donation {
-    color: white;
+  color: white;
 }
 
 #bidrag-text {
-    color: white;
+  color: white;
 }
-
-
 
 /* Medlem */
 .medlem {
-    background-color: rgba(35, 48, 81, 1);
-    display: grid;
-    grid-template-columns: 1fr;
+  background-color: rgba(35, 48, 81, 1);
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .medlem h2 {
-    color: rgba(242, 134, 39, 1);
+  color: rgba(242, 134, 39, 1);
 }
 
 .medlem p {
-    color: white;
+  color: white;
 }
 
 label {
-    color: white;
-
+  color: white;
 }
 
 .form_medlem {
-    margin: 20px;
-    font-family: ibm-plex-bold;
+  margin: 20px;
+  font-family: ibm-plex-bold;
 }
 
 form {
-    padding-top: 3rem;
-    padding-bottom: 5rem;
-    font-family: ibm-plex-bold;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  font-family: ibm-plex-bold;
 }
 
 .form input {
-    background-color: #d9d9d9;
-    border-radius: 10px;
-    width: 300px;
-    height: 40px;
-    font-family: ibm-plex;
-    border: none;
-    outline: none;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  width: 300px;
+  height: 40px;
+  font-family: ibm-plex;
+  border: none;
+  outline: none;
 }
 
 .navn,
 .email {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .besked {
-    padding-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 #bigText2 {
-    background-color: #d9d9d9;
-    border-radius: 10px;
-    width: 300px;
-    height: 120px;
-    font-family: ibm-plex;
-    border: none;
-    outline: none;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  width: 300px;
+  height: 120px;
+  font-family: ibm-plex;
+  border: none;
+  outline: none;
 }
 
 .button-standard {
-    background-color: #f28627;
-    color: white;
-    border-radius: 20px;
-    width: 130px;
-    font-family: ibm-plex-bold;
-    border: none;
-    outline: none;
-    cursor: pointer;
+  background-color: #f28627;
+  color: white;
+  border-radius: 20px;
+  width: 130px;
+  font-family: ibm-plex-bold;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 8px 10px;
 }
 
-
+.button-standard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(242, 134, 39, 0.3);
+}
 
 /* Virksomhed */
 hr {
-    width: 50%;
+  width: 50%;
 }
 
 .virksomhed {
-    background-color: rgba(241, 237, 222, 1);
-    padding-bottom: 20px;
-    display: grid;
-    grid-template-columns: 1fr;
+  background-color: rgba(241, 237, 222, 1);
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .virksomhed h3 {
-    color: rgba(35, 48, 81, 1);
+  color: rgba(35, 48, 81, 1);
 }
 
 .order {
-    order: 2;
+  order: 2;
 }
 
 .venskabspartner {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 25px;
-    border-radius: 20px;
-    width: 40%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 25px;
+  border-radius: 20px;
+  width: 40%;
 }
 
 .venskabspartner p {
-    line-height: 5px;
+  line-height: 5px;
 }
-
-
 
 /* Scan */
 #mobilepay {
-    width: 40%;
+  width: 40%;
 }
 
 .scan {
-    display: grid;
-    grid-template-columns: 1fr;
+  display: grid;
+  grid-template-columns: 1fr;
 }
-
-
 
 /* BTN orange */
 .btn_orange {
-    background-color: rgba(242, 134, 39, 1);
-    border-radius: 30px;
-    width: 20%;
-    border: none;
-    cursor: pointer;
-    color: white;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  background-color: rgba(242, 134, 39, 1);
+  border-radius: 0px;
+  width: 20%;
+  border: none;
+  cursor: pointer;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 8px 10px;
+}
+
+.btn_orange:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(242, 134, 39, 0.3);
 }
 
 /* BTN blå */
 .btn_blå {
-    background-color: rgba(35, 48, 81, 1);
-    border-radius: 30px;
-    width: 20%;
-    border: none;
-    cursor: pointer;
-    color: white;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  background-color: rgba(35, 48, 81, 1);
+  border-radius: 30px;
+  width: 20%;
+  border: none;
+  cursor: pointer;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 8px 10px;
+}
+
+.btn_blå:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(6, 2, 76, 0.3);
 }
 
 @media screen and (min-width: 768px) {
+  .paragraph {
+    font-size: 18px;
+  }
 
-    .paragraph {
-        font-size: 18px;
-    }
+  .header2 {
+    font-size: 30px;
+  }
 
-    .header2 {
-        font-size: 30px;
-    }
+  .header2,
+  .paragraph {
+    margin-left: 150px;
+    margin-right: 150px;
+    width: 80%;
+  }
 
+  /* Valgmuligheder for donation */
+  .valgmuligheder img {
+    width: 50%;
+  }
 
-    .header2,
-    .paragraph {
-        margin-left: 150px;
-        margin-right: 150px;
-        width: 80%;
-    }
+  /* Fadder */
 
-    /* Valgmuligheder for donation */
-    .valgmuligheder img {
-        width: 50%;
-    }
+  .fadder {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px;
+  }
 
-    /* Fadder */
+  .fadder img {
+    width: 50%;
+    object-fit: contain;
+  }
 
+  #underline {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    order: 1;
+    cursor: pointer;
+    margin-top: 0;
+    padding-left: 3.5rem;
+  }
 
-    .fadder {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding: 30px;
+  /* Bidrag */
 
-    }
+  .bidrag {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 80px;
+  }
 
-    .fadder img {
-        width: 50%;
-        object-fit: contain;
+  .bidrag img {
+    width: 100%;
+    margin: 0;
+  }
 
-    }
+  .bidrag_text {
+    order: 2;
+    padding-left: 100px;
+    padding-right: 20px;
+    width: 70%;
+  }
 
-    #underline {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        order: 1;
-        cursor: pointer;
-        margin-top: 0;
-    }
+  .bidrag img {
+    width: 100%;
+    padding-left: 180px;
+    object-fit: contain;
+  }
 
-    /* Bidrag */
+  /* Medlem */
 
-    .bidrag {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        padding: 80px;
-    }
+  .medlem {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px;
+  }
 
-    .bidrag img {
-        width: 100%;
-        margin: 0;
-    }
+  form {
+    padding-top: 80px;
+    padding-bottom: 0;
+  }
 
-    .bidrag_text {
-        order: 2;
-        padding-left: 100px;
-        padding-right: 20px;
-        width: 70%;
-    }
+  .btn_orange {
+    background-color: rgba(242, 134, 39, 1);
+    border-radius: 30px;
+    width: 30%;
+    border: none;
+    cursor: pointer;
+    color: white;
+    margin: 20px auto;
+    font-size: 15px;
+  }
 
-    .bidrag img {
-        width: 100%;
-        padding-left: 180px;
-        object-fit: contain;
-    }
+  /* Virksomhed */
+  .virksomhed {
+    padding: 30px;
+  }
 
+  .støtte_donation p {
+    width: 100%;
+  }
 
+  .støtte_donation h3 {
+    font-size: 23px;
+  }
 
+  .virksomhed_text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 70px;
+    padding-right: 80px;
+    width: 80%;
+    padding-bottom: 30px;
+    margin-top: 40px;
+  }
 
-    /* Medlem */
+  .støtte_muligheder {
+    display: flex;
+    flex-direction: row;
+  }
 
-    .medlem {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding: 30px;
-    }
+  .virksomhed img {
+    width: 80%;
+    object-fit: contain;
+  }
 
-    form {
-        padding-top: 80px;
-        padding-bottom: 0;
-    }
+  .btn_blå {
+    background-color: rgba(35, 48, 81, 1);
+    border-radius: 30px;
+    width: 40%;
+    border: none;
+    cursor: pointer;
+    color: white;
+    margin: 20px auto;
+    font-size: 15px;
+  }
 
-    .btn_orange {
-        background-color: rgba(242, 134, 39, 1);
-        border-radius: 30px;
-        width: 20%;
-        border: none;
-        cursor: pointer;
-        color: white;
-        margin: 20px auto;
-        font-size: 15px;
-    }
+  /* Scan */
 
-    /* Virksomhed */
-    .virksomhed {
-        padding: 30px;
+  .scan {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 90px;
+  }
 
-    }
+  .scan h2 {
+    font-size: 30px;
+  }
 
-    .støtte_donation p {
-        width: 100%;
-    }
+  .scan p {
+    font-size: 20px;
+    width: 70%;
+  }
 
-    .støtte_donation h3 {
-        font-size: 23px;
-    }
-
-    .virksomhed_text {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding-left: 70px;
-        padding-right: 80px;
-        width: 80%;
-        padding-bottom: 30px;
-        margin-top: 40px;
-    }
-
-    .støtte_muligheder {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .virksomhed img {
-        width: 80%;
-        object-fit: contain;
-
-    }
-
-    .btn_blå {
-        background-color: rgba(35, 48, 81, 1);
-        border-radius: 30px;
-        width: 20%;
-        border: none;
-        cursor: pointer;
-        color: white;
-        margin: 20px auto;
-        font-size: 15px;
-    }
-
-
-
-    /* Scan */
-
-    .scan {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding: 90px;
-    }
-
-    .scan h2 {
-        font-size: 30px;
-    }
-
-    .scan p {
-        font-size: 20px;
-        width: 70%;
-    }
-
-    #mobilepay {
-        width: 50%;
-        object-fit: contain;
-    }
-
+  #mobilepay {
+    width: 50%;
+    object-fit: contain;
+  }
 }

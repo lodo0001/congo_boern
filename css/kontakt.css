@@ -69,7 +69,8 @@ main button {
 }
 
 main button:hover {
-  background-color: rgb(210, 92, 49);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(242, 134, 39, 0.3);
 }
 
 /* css til computer */
