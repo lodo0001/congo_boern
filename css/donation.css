@@ -5,7 +5,7 @@ h3 {
 }
 
 main {
-  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .center {
@@ -19,32 +19,36 @@ main {
   width: 80%;
 }
 
-.valgmuligheder {
-  display: grid;
-  justify-content: center;
-  text-align: center;
-  grid-template-columns: 1fr 1fr;
-  margin: 20px;
+.donationsmuligheder-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
 }
 
-.valgmulighed-btn {
-  display: flex;
-  flex-direction: column;
+.muligheder-top, .muligheder-bottom {
+    display: flex;
+    flex-direction: column;
 }
 
-.valgmulighed-btn a {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(241, 237, 222, 0.95);
-  color: rgba(35, 48, 81, 1);
-  padding: 20px;
-  text-align: center;
-  font-family: ibm-plex-bold;
-  font-size: 18px;
-  text-decoration: none;
-  margin: 0;
+.donationsmulighed-btn-container a {
+    text-decoration: none;
+    color: black;
+    background-color: #F1EDDE;
+    padding: 20px;
+    position: relative;
+    bottom: 50px;
+    cursor: pointer;
+    font-family: ibm-plex-med;
+}
+
+.donationsmulighed-btn-container {
+    display: flex;
+   justify-content: center;
+}
+
+.donationsmulighed-card img {
+    width: 350px;
 }
 
 /* Bliv fadder */
@@ -365,11 +369,33 @@ hr {
   }
 
   /* Valgmuligheder for donation */
-  .valgmuligheder img {
-    width: 50%;
-  }
+.donationsmuligheder-container {
+    align-items: normal;
+}
+    
+.muligheder-top, .muligheder-bottom {
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+    
+.donationsmulighed-btn-container a {
+        text-decoration: none;
+        color: black;
+        background-color: #F1EDDE;
+        padding: 20px;
+        position: relative;
+        bottom: 50px;
+        cursor: pointer;
+    }
+    
+    .donationsmulighed-btn-container {
+        display: flex;
+        justify-content: center;
+    }
 
-  /* Fadder */
+    .donationsmulighed-card img {
+        width: 400px;
+    }
 
   .fadder {
     display: grid;
