@@ -155,7 +155,7 @@ body {
     font-size: 12px;
 }
 
-.donationBar {
+.donation-bar {
     background-color: var(--orange);
     padding: 5px 0;
     display: flex;
@@ -356,12 +356,12 @@ footer {
     padding-bottom: 2vw;
     }
     
-.social-text {
+.footer-social-text {
     text-transform: uppercase;
     font-family: ibm-plex-bold;
 }
 
-.socials {
+.footer-socials {
     display: flex;
     gap: 10px;
 }

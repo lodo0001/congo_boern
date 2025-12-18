@@ -1,35 +1,55 @@
-main {
-    margin: 20px;
+main h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+main h2 {
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
 }
 
 .fn {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+.fn-goal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
     gap: 20px;
 }
 
-.fn img {
-    width: 90%;
+.fn-goal img {
+    width: 200px;
 }
 
 @media screen and (min-width: 768px) {
-    main {
-        margin: 150px;
-    }
-
-    div {
+    .fn {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 2vw;
+        margin-bottom: 2vw;
     }
-
-    .fn img {
-        width: 50%;
-        object-fit: contain;
+    
+    .fn h1 {
+        font-size: 48px;
+        margin-top: 5vw;
     }
-
-    h1 {
-        width: 45%;
+    
+    .fn-goal {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 70%;
+        gap: 2vw;
     }
-
 }

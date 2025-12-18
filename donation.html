@@ -6,31 +6,208 @@
     <title>Donation</title>
     <link rel="stylesheet" href="css/donation.css" />
     <link rel="stylesheet" href="css/general.css" />
+    <script src="js/burgermenu.js" defer></script>
+    <script src="js/donation-popup.js" defer></script>
   </head>
   <body>
+    <header>
+      <div class="navbar">
+        <div class="nav-container">
+          <a href="index.html"
+            ><img class="logo" src="img/congo-logo.png" alt=""
+          /></a>
+          <div class="navbar-link-container">
+            <a href="index.html">forside</a>
+            <div class="dropdown">
+              <button class="dropbtn">Støt os</button>
+              <div class="dropdown-content">
+                <a href="donation.html">Donation</a>
+                <a href="webshop.html">Webshop</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Congo</button>
+              <div class="dropdown-content">
+                <a href="billedgalleri.html">Billeder fra Congo</a>
+                <a href="rejse.html">Video fra Congo</a>
+              </div>
+            </div>
+            <a href="nyheder.html">Nyheder</a>
+            <div class="dropdown">
+              <button class="dropbtn">
+                Om os
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="ambassadorer.html">Ambassadører</a>
+                <a href="bestyrelsen.html">Bestyrelsen</a>
+                <a href="gina.html">Ginas Historie</a>
+                <a href="fn.html">Vores mission</a>
+              </div>
+            </div>
+            <a href="kontakt.html">kontakt</a>
+          </div>
+        </div>
+        <a href="#"
+          ><svg
+            class="ws-menu-cart__icon-scaled"
+            id="cart"
+            focusable="false"
+            viewBox="0 0 150 150"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3.79976 21.25L4.60333 8.75H19.3967L20.2002 21.25H3.79976Z"
+              stroke="currentColor"
+              stroke-width="1.5"
+              transform="matrix(6,0,0,6,0,0)"
+            ></path>
+            <path
+              d="M15.5 11C15.5 6.89732 15.1411 3 12 3C8.85888 3 8.5 6.89732 8.5 11"
+              stroke="currentColor"
+              stroke-width="1.5"
+              transform="matrix(6,0,0,6,0,0)"
+            ></path>
+          </svg>
+        </a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <img src="img/burger.svg" alt="" />
+        </a>
+        <div id="burgermenu-links">
+          <a href="index.html">Forside</a>
+
+          <div class="mobile-dropdown">
+            <button
+              class="mobile-dropdown-btn"
+              onclick="toggleMobileDropdown(this)"
+            >
+              Støt os
+              <span class="arrow-icon">▼</span>
+            </button>
+            <div class="mobile-dropdown-content">
+              <a href="donation.html">Donation</a>
+              <a href="webshop.html">Webshop</a>
+            </div>
+          </div>
+
+          <div class="mobile-dropdown">
+            <button
+              class="mobile-dropdown-btn"
+              onclick="toggleMobileDropdown(this)"
+            >
+              Congo
+              <span class="arrow-icon">▼</span>
+            </button>
+            <div class="mobile-dropdown-content">
+              <a href="billedgalleri.html">Billeder fra Congo</a>
+              <a href="rejse.html">Video fra Congo</a>
+            </div>
+          </div>
+
+          <a href="nyheder.html">Nyheder</a>
+
+          <div class="mobile-dropdown">
+            <button
+              class="mobile-dropdown-btn"
+              onclick="toggleMobileDropdown(this)"
+            >
+              Om os
+              <span class="arrow-icon">▼</span>
+            </button>
+            <div class="mobile-dropdown-content">
+              <a href="ambassadorer.html">Ambassadører</a>
+              <a href="bestyrelsen.html">Bestyrelsen</a>
+              <a href="gina.html">Ginas Historie</a>
+              <a href="fn.html">Vores mission</a>
+            </div>
+          </div>
+
+          <a href="">Kontakt</a>
+        </div>
+      </div>
+      <div class="donation-bar">
+        <div class="donation-container">
+          <dialog class="dialog" id="dialog">
+            <form method="dialog">
+              <div class="modal-backdrop">
+                <div class="donation-modal">
+                  <h1 class="modal-title">Donation</h1>
+                  <button id="closeBtn" class="close-btn">
+                    <img class="close-btn-cross" src="img/close.svg" alt="" />
+                  </button>
+                  <p class="modal-description">
+                    Din donation gør en stor forskel for børnene på Maison
+                    VIGALEX
+                  </p>
+
+                  <div class="donation-options-modal">
+                    <div
+                      class="donation-option-modal active"
+                      onclick="selectAmount(this)"
+                    >
+                      150kr.
+                    </div>
+                    <div
+                      class="donation-option-modal"
+                      onclick="selectAmount(this)"
+                    >
+                      300kr.
+                    </div>
+                    <div
+                      class="donation-option-modal"
+                      onclick="selectAmount(this)"
+                    >
+                      500kr.
+                    </div>
+                  </div>
+                  <div class="custom-donation-modal">
+                    <textarea
+                      class="donation-option"
+                      type="text"
+                      rows="1"
+                      placeholder="Valgfrit beløb"
+                      onclick="selectCustom()"
+                    ></textarea>
+                  </div>
+                  <div class="monthly-toggle-modal">
+                    <input type="checkbox" id="monthly" />
+                    <label for="monthly">Gentag månedligt</label>
+                  </div>
+                  <button class="donate-submit-modal">NÆSTE →</button>
+                </div>
+              </div>
+            </form>
+          </dialog>
+          <button class="donation" id="open-btn">
+            Støt nu <img class="arrow" src="img/arrow.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </header>
     <main>
-      <section class="valgmuligheder">
-        <div>
-          <img src="img/donation/donation1.webp" alt="søde børn" />
-          <h3>Bliv fadder</h3>
+      <!-- <section class="valgmuligheder">
+        <div class="valgmulighed-btn">
+          <img class="img" src="img/donation/donation1.webp" alt="søde børn" />
+          <a>Bliv fadder</a>
         </div>
-        <div>
-          <img src="img/donation/donation2.webp" alt="søde børn" />
-          <h3>Giv et bidrag</h3>
+        <div class="valgmulighed-btn">
+          <img class="img" src="img/donation/donation2.webp" alt="søde børn" />
+          <a>Giv et bidrag</a>
         </div>
-        <div>
-          <img src="img/donation/donation3.webp" alt="sødde børn" />
-          <h3>Bliv medlem</h3>
+        <div class="valgmulighed-btn">
+          <img class="img" src="img/donation/donation3.webp" alt="sødde børn" />
+          <a>Bliv medlem</a>
         </div>
-        <div>
-          <img src="img/donation/donation4.webp" alt="søde børn" />
-          <h3>Støt som virksomhed</h3>
+        <div class="valgmulighed-btn">
+          <img class="img" src="img/donation/donation4.webp" alt="søde børn" />
+          <a>Støt som virksomhed</a>
         </div>
-      </section>
+      </section> -->
       <section class="fadder">
-        <div>
-          <h2>Bliv fadder for et barn i Maison VIGALEX</h2>
-          <p>
+        <div class="fadder-text">
+          <h2 class="header2">Bliv fadder for et barn i Maison VIGALEX</h2>
+          <p class="paragraph">
             Et kontinuerligt og stabilt månedligt bidrag skaber radikale
             forandringer for det enkelte gadebarn og alle børn i børnehuset. Som
             fadder hos Congos Børn hjælper du tidligere gadebørn, der nu bor i
@@ -39,49 +216,90 @@
             basale behov som tag over hovedet, mad hver dag, tøj på kroppen,
             sikkerhed og tryghed, samt skolegang.
           </p>
-          <p>
+          <p class="paragraph">
             At være fadder for et VIGALEX-barn er en langsigtet måde at hjælpe
             et tidligere gadebarn på, der har levet et utrygt og farligt liv på
             gaden til at vokse op i sikre omgivelser med voksne, der er der for
             dem med tryghed, tillid og muligheder, som de ellers ikke ville have
             haft. <br />
-            <button class="btn_orange">Læs mere</button>
+            <button class="btn_orange button-standard">Læs mere</button>
           </p>
         </div>
-        <div class="center">
-          <img src="img/donation/fadder_donation.png" alt="donation boks" />
+        <div class="donation-card">
+          <h3 id="fadder-donation">Tilmeld dig som fadder</h3>
+          <p id="fadder-donation-text">
+            Din donation gør en stor forskel for børnene på Maison VIGALEX
+          </p>
+          <div class="donation-options-fadder">
+            <div class="donation-option active">250kr.</div>
+          </div>
+          <button class="donate-submit">Næste →</button>
         </div>
-        <p id="underline">Print gavebevis til fadderskab</p>
+        <!-- <div class="center">
+          <img
+            class="img"
+            src="img/donation/fadder_donation.png"
+            alt="donation boks"
+          />
+        </div> -->
+        <p class="paragraph" id="underline">Print gavebevis til fadderskab</p>
         <div></div>
       </section>
       <section class="bidrag">
         <div class="bidrag_text">
-          <h2>Giv et bidrag</h2>
-          <p>
+          <h2 class="header2">Giv et bidrag</h2>
+          <p class="paragraph">
             Når du giver et bidrag, støtter du direkte de tidligere gadebørn,
             der nu bor i børnehuset VIGALEX i Kinshasa.
           </p>
-          <p>
+          <p class="paragraph">
             Din støtte er med til at give dem et trygt hjem, uddannelse og en
             chance for en bedre fremtid. Når du donerer, går pengene ubeskåret
             til at forbedre børnenes livskvalitet - fra daglige måltider til
             skolegang og omsorg. <br />
-            <button class="btn_blå">Læs mere</button>
+            <button class="btn_blå button-standard">Læs mere</button>
           </p>
         </div>
-        <div class="center">
-          <img src="img/donation/bidrag.png" alt="" />
+        <!-- <div class="center">
+          <img class="img" src="img/donation/bidrag.png" alt="" />
+        </div> -->
+        <div class="donation-card">
+          <h3>Donation</h3>
+          <p>Din donation gør en stor forskel for børnene på Maison VIGALEX</p>
+          <div class="donation-options">
+            <div class="donation-option active" id="bidrag-donation">
+              150kr.
+            </div>
+            <div class="donation-option" id="bidrag-donation">300kr.</div>
+            <div class="donation-option" id="bidrag-donation">500kr.</div>
+          </div>
+          <div class="custom-donation">
+            <textarea
+              class="donation-option"
+              name="donation"
+              rows="1"
+              id="bidrag-text"
+              placeholder="Valgfrit beløb"
+            ></textarea>
+          </div>
+          <div class="monthly-toggle">
+            <input type="checkbox" id="monthly" />
+            <label for="monthly">Gentag månedligt</label>
+          </div>
+          <button class="donate-submit">Næste →</button>
         </div>
       </section>
       <section class="medlem">
         <div>
-          <h2>Bliv medlem Årsmedlemskab til Congos Børn 150kr</h2>
-          <p>
+          <h2 class="header2">
+            Bliv medlem Årsmedlemskab til Congos Børn 150kr
+          </h2>
+          <p class="paragraph">
             Pengene går til den løbende drift af VIGALEX-børnehus: husleje,
             faste medarbejders løn, uundgåeligt vedligehold af huset og buffer
             til uforudsete udgifter.
           </p>
-          <p>
+          <p class="paragraph">
             or at blive medlem af foreningen bedes du udfylde og sende
             nedenstående formular, med e-mail, dit navn samt "ja tak" eller "nej
             tak", ift. hvorvidt du ønsker at modtage nyheder om projektet via
@@ -89,10 +307,10 @@
             bankoverførsel. Skriv venligst "medlemskontingent" i kommentarfeltet
             på overførslen.
           </p>
-          <p>
+          <p class="paragraph">
             Så snart vi har modtaget din indbetaling, sender vi dig en
             bekræftelse på dit medlemskab. <br />
-            <button class="btn_orange">Læs mere</button>
+            <button class="btn_orange button-standard">Læs mere</button>
           </p>
         </div>
         <div>
@@ -122,7 +340,9 @@
                       cols="50"
                     ></textarea>
                   </div>
-                  <button class="submit_btn" type="submit">SEND AFSTED</button>
+                  <button class="submit_btn button-standard" type="submit">
+                    SEND AFSTED
+                  </button>
                 </form>
               </div>
             </article>
@@ -132,60 +352,165 @@
       <section class="virksomhed">
         <div class="virksomhed_text">
           <div class="order">
-            <h2>Virksomhedsdonation</h2>
-            <p>
+            <h2 class="header2">Virksomhedsdonation</h2>
+            <p class="paragraph">
               Som virksomhed kan i være med til at skabe håb og fremtid for
               gadebørn i Kinshasa. Vælg den støttemodel, der passer til jer –
               eller kontakt os for en skræddersyet løsning <br />
-              <button class="btn_blå">Læs mere</button>
+              <button class="btn_blå button-standard">Læs mere</button>
             </p>
           </div>
           <div class="center">
-            <img src="img/donation/donation4.webp" alt="søde børn" />
+            <img
+              class="img"
+              src="img/donation/donation4.webp"
+              alt="søde børn"
+            />
           </div>
         </div>
         <div class="støtte_donation">
           <div class="støtte_muligheder">
             <div class="venskabspartner">
               <h3>Venskabspartner</h3>
-              <p>Fra 500 kr./md. eller engangsstøtte</p>
+              <p class="paragraph">Fra 500 kr./md. eller engangsstøtte</p>
               <hr />
-              <p>Nævnelse på vores hjemmeside</p>
-              <p>Nyhedsopdateringer til deling</p>
+              <p class="paragraph">Nævnelse på vores hjemmeside</p>
+              <p class="paragraph">Nyhedsopdateringer til deling</p>
             </div>
             <div class="venskabspartner">
               <h3>Støttepartner</h3>
-              <p>Fra 1.500 kr./md.</p>
+              <p class="paragraph">Fra 1.500 kr./md.</p>
               <hr />
-              <p>Logo på vores hjemmeside i virksomheden</p>
-              <p>Omtale på sociale medier</p>
-              <p>Mulighed for oplæg</p>
+              <p class="paragraph">Logo på vores hjemmeside i virksomheden</p>
+              <p class="paragraph">Omtale på sociale medier</p>
+              <p class="paragraph">Mulighed for oplæg</p>
             </div>
             <div class="venskabspartner">
               <h3>Hovedpartner</h3>
-              <p>Fra 3500 kr./md.</p>
+              <p class="paragraph">Fra 3500 kr./md.</p>
               <hr />
-              <p>Fremhævet logo og profil medier</p>
-              <p>Omtale i nyheder, materialer og sociale</p>
-              <p>Mulighed for oplæg i virksomheden</p>
-              <p>Årlig rapport om jeres støtte</p>
+              <p class="paragraph">Fremhævet logo og profil medier</p>
+              <p class="paragraph">Omtale i nyheder, materialer og sociale</p>
+              <p class="paragraph">Mulighed for oplæg i virksomheden</p>
+              <p class="paragraph">Årlig rapport om jeres støtte</p>
             </div>
           </div>
         </div>
       </section>
       <section class="scan">
         <div>
-          <h2>Scan QR-kode for betaling af medlemskab</h2>
-          <p>Tak for din støtte.</p>
-          <p>
+          <h2 class="header2">Scan QR-kode for betaling af medlemskab</h2>
+          <p class="paragraph">Tak for din støtte.</p>
+          <p class="paragraph">
             Alle bidrag går ubeskåret til at hjælpe tidligere gadebørn i
             børnehjemmet, Maison Vigalex, til et bedre liv. 
           </p>
         </div>
         <div class="center">
-          <img id="mobilepay" src="img/donation/qr.webp" alt="qr kode" />
+          <img
+            class="img"
+            id="mobilepay"
+            src="img/donation/qr.webp"
+            alt="qr kode"
+          />
         </div>
       </section>
     </main>
+    <footer>
+      <section class="footer-container">
+        <div class="footer-info-container">
+          <div class="footer-text-container">
+            <h1 class="footer-headline">Congos Børn</h1>
+            <p class="footer-text">
+              <strong>Mail: </strong>Info@congosboern.dk
+            </p>
+            <p class="footer-text"><strong>Telefon: </strong>+45 41 26 36 20</p>
+          </div>
+          <div class="footer-text-container">
+            <p class="footer-text"><strong>Mobilepay: </strong>273441</p>
+            <p class="footer-text">
+              <strong>Reg.nr og konto: </strong>5442 0255572
+            </p>
+          </div>
+          <div class="footer-text-container">
+            <p class="footer-text">
+              <strong>Kontohaver: </strong>Foreningen Congos Børn
+            </p>
+            <p class="footer-text">
+              <strong>Indsamlingskonto:</strong>54420255572
+            </p>
+            <p class="footer-text"><strong>IBAN: </strong>DK1954420000255572</p>
+            <p class="footer-text"><strong>SWIFT/BIC: </strong>ALBADKKK</p>
+          </div>
+        </div>
+        <div class="footer-sponsor-container">
+          <h2 class="footer-subheadline">Tak til vores sponsorer</h2>
+          <div class="footer-sponsor-pic-container">
+            <div class="footer-pic-left">
+              <img
+                src="img/footer/spons1.png"
+                alt=""
+                class="footer-sponsor-pic"
+              />
+              <img
+                src="img/footer/spons2.png"
+                alt=""
+                class="footer-sponsor-pic"
+              />
+            </div>
+            <div class="footer-pic-right">
+              <img
+                src="img/footer/spons3.png"
+                alt=""
+                class="footer-sponsor-pic"
+              />
+              <img
+                src="img/footer/spons4.png"
+                alt=""
+                class="footer-sponsor-pic"
+              />
+              <img
+                src="img/footer/spons5.png"
+                alt=""
+                class="footer-sponsor-pic"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="footer-divider-container">
+        <svg
+          class="footer-divider"
+          viewBox="0 0 1179 4"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line
+            x1="0.00129122"
+            y1="3.5"
+            x2="1179"
+            y2="0.500002"
+            stroke="#133A67"
+          />
+        </svg>
+      </div>
+      <section class="footer-bottom">
+        <div class="payment">
+          <img src="img/footer/payment1.svg" alt="" class="payment-icon" />
+          <img src="img/footer/payment2.svg" alt="" class="payment-icon" />
+          <img src="img/footer/payment3.svg" alt="" class="payment-icon" />
+          <img src="img/footer/payment4.svg" alt="" class="payment-icon" />
+          <img src="img/footer/payment5.svg" alt="" class="payment-icon" />
+          <img src="img/footer/payment6.svg" alt="" class="payment-icon" />
+          <img src="img/footer/payment7.svg" alt="" class="payment-icon" />
+        </div>
+        <div class="footer-socials">
+          <p class="footer-social-text">Følg os her</p>
+          <img src="img/footer/social1.svg" alt="" class="social-icon" />
+          <img src="img/footer/social2.svg" alt="" class="social-icon" />
+          <img src="img/footer/social3.svg" alt="" class="social-icon" />
+        </div>
+      </section>
+    </footer>
   </body>
 </html>

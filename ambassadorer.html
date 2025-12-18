@@ -3,69 +3,187 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ambassabører</title>
     <link rel="stylesheet" href="css/ambassadorer.css" />
     <link rel="stylesheet" href="css/general.css" />
+    <script src="js/burgermenu.js" defer></script>
+    <script src="js/donation-popup.js" defer></script>
+    <title>Ambassadører</title>
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li>
-            <a href="index.html"><img src="img/congo-logo.png" alt="" /></a>
-          </li>
-          <li><a href="">Forside</a></li>
-          <li><a href="">Støt os</a></li>
-          <li><a href="">Congo</a></li>
-          <li><a href="">Nyheder</a></li>
-          <li><a href="">Om os</a></li>
-          <li><a href="">Kontakt</a></li>
-          <li>
-            <a class="basket" href=""
-              ><svg
-                class="ws-menu-cart__icon-scaled"
-                id="cart-id"
-                focusable="false"
-                viewBox="0 0 150 150"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M3.79976 21.25L4.60333 8.75H19.3967L20.2002 21.25H3.79976Z"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  transform="matrix(6,0,0,6,0,0)"
-                ></path>
-                <path
-                  d="M15.5 11C15.5 6.89732 15.1411 3 12 3C8.85888 3 8.5 6.89732 8.5 11"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  transform="matrix(6,0,0,6,0,0)"
-                ></path>
-              </svg>
-            </a>
-          </li>
-        </ul>
-        <div class="donationBar">
-          <div class="donationContainer">
-            <a href="" class="donation"
-              >Støt nu<svg
-                class="arrow"
-                width="78"
-                height="15"
-                viewBox="0 0 78 15"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M77.7071 8.07112C78.0976 7.6806 78.0976 7.04743 77.7071 6.65691L71.3431 0.292946C70.9526 -0.0975785 70.3195 -0.0975785 69.9289 0.292946C69.5384 0.68347 69.5384 1.31664 69.9289 1.70716L75.5858 7.36401L69.9289 13.0209C69.5384 13.4114 69.5384 14.0446 69.9289 14.4351C70.3195 14.8256 70.9526 14.8256 71.3431 14.4351L77.7071 8.07112ZM0 7.36401V8.36401H77V7.36401V6.36401H0V7.36401Z"
-                  fill="black"
-                />
-              </svg>
-            </a>
+      <div class="navbar">
+        <div class="nav-container">
+          <a href="index.html"
+            ><img class="logo" src="img/congo-logo.png" alt=""
+          /></a>
+          <div class="navbar-link-container">
+            <a href="index.html">forside</a>
+            <div class="dropdown">
+              <button class="dropbtn">Støt os</button>
+              <div class="dropdown-content">
+                <a href="donation.html">Donation</a>
+                <a href="webshop.html">Webshop</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Congo</button>
+              <div class="dropdown-content">
+                <a href="billedgalleri.html">Billeder fra Congo</a>
+                <a href="rejse.html">Video fra Congo</a>
+              </div>
+            </div>
+            <a href="nyheder.html">Nyheder</a>
+            <div class="dropdown">
+              <button class="dropbtn">
+                Om os
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="ambassadorer.html">Ambassadører</a>
+                <a href="bestyrelsen.html">Bestyrelsen</a>
+                <a href="gina.html">Ginas Historie</a>
+                <a href="fn.html">Vores mission</a>
+              </div>
+            </div>
+            <a href="kontakt.html">kontakt</a>
           </div>
         </div>
-      </nav>
+        <a href="#"
+          ><svg
+            class="ws-menu-cart__icon-scaled"
+            id="cart"
+            focusable="false"
+            viewBox="0 0 150 150"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3.79976 21.25L4.60333 8.75H19.3967L20.2002 21.25H3.79976Z"
+              stroke="currentColor"
+              stroke-width="1.5"
+              transform="matrix(6,0,0,6,0,0)"
+            ></path>
+            <path
+              d="M15.5 11C15.5 6.89732 15.1411 3 12 3C8.85888 3 8.5 6.89732 8.5 11"
+              stroke="currentColor"
+              stroke-width="1.5"
+              transform="matrix(6,0,0,6,0,0)"
+            ></path>
+          </svg>
+        </a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <img src="img/burger.svg" alt="" />
+        </a>
+        <div id="burgermenu-links">
+          <a href="index.html">Forside</a>
+
+          <div class="mobile-dropdown">
+            <button
+              class="mobile-dropdown-btn"
+              onclick="toggleMobileDropdown(this)"
+            >
+              Støt os
+              <span class="arrow-icon">▼</span>
+            </button>
+            <div class="mobile-dropdown-content">
+              <a href="donation.html">Donation</a>
+              <a href="webshop.html">Webshop</a>
+            </div>
+          </div>
+
+          <div class="mobile-dropdown">
+            <button
+              class="mobile-dropdown-btn"
+              onclick="toggleMobileDropdown(this)"
+            >
+              Congo
+              <span class="arrow-icon">▼</span>
+            </button>
+            <div class="mobile-dropdown-content">
+              <a href="billedgalleri.html">Billeder fra Congo</a>
+              <a href="rejse.html">Video fra Congo</a>
+            </div>
+          </div>
+
+          <a href="nyheder.html">Nyheder</a>
+
+          <div class="mobile-dropdown">
+            <button
+              class="mobile-dropdown-btn"
+              onclick="toggleMobileDropdown(this)"
+            >
+              Om os
+              <span class="arrow-icon">▼</span>
+            </button>
+            <div class="mobile-dropdown-content">
+              <a href="ambassadorer.html">Ambassadører</a>
+              <a href="bestyrelsen.html">Bestyrelsen</a>
+              <a href="gina.html">Ginas Historie</a>
+              <a href="fn.html">Vores mission</a>
+            </div>
+          </div>
+
+          <a href="">Kontakt</a>
+        </div>
+      </div>
+      <div class="donation-bar">
+        <div class="donation-container">
+          <dialog class="dialog" id="dialog">
+            <form method="dialog">
+              <div class="modal-backdrop">
+                <div class="donation-modal">
+                  <h1 class="modal-title">Donation</h1>
+                  <button id="closeBtn" class="close-btn">
+                    <img class="close-btn-cross" src="img/close.svg" alt="" />
+                  </button>
+                  <p class="modal-description">
+                    Din donation gør en stor forskel for børnene på Maison
+                    VIGALEX
+                  </p>
+
+                  <div class="donation-options-modal">
+                    <div
+                      class="donation-option-modal active"
+                      onclick="selectAmount(this)"
+                    >
+                      150kr.
+                    </div>
+                    <div
+                      class="donation-option-modal"
+                      onclick="selectAmount(this)"
+                    >
+                      300kr.
+                    </div>
+                    <div
+                      class="donation-option-modal"
+                      onclick="selectAmount(this)"
+                    >
+                      500kr.
+                    </div>
+                  </div>
+                  <div class="custom-donation-modal">
+                    <textarea
+                      class="donation-option"
+                      type="text"
+                      rows="1"
+                      placeholder="Valgfrit beløb"
+                      onclick="selectCustom()"
+                    ></textarea>
+                  </div>
+                  <div class="monthly-toggle-modal">
+                    <input type="checkbox" id="monthly" />
+                    <label for="monthly">Gentag månedligt</label>
+                  </div>
+                  <button class="donate-submit-modal">NÆSTE →</button>
+                </div>
+              </div>
+            </form>
+          </dialog>
+          <button class="donation" id="open-btn">
+            Støt nu <img class="arrow" src="img/arrow.svg" alt="" />
+          </button>
+        </div>
+      </div>
     </header>
     <main>
       <section id="title_text">
@@ -84,19 +202,35 @@
       </section>
       <section id="profile">
         <div>
-          <img src="img/ambassadører/wafande.png" alt="wafande" />
+          <img
+            class="ambassadorer-img"
+            src="img/ambassadører/wafande.png"
+            alt="wafande"
+          />
           <h3>Wafande</h3>
         </div>
         <div>
-          <img src="img/ambassadører/charlotteu.png" alt="charlotteu" />
+          <img
+            class="ambassadorer-img"
+            src="img/ambassadører/charlotteu.png"
+            alt="charlotteu"
+          />
           <h3>Charlotte Urne</h3>
         </div>
         <div>
-          <img src="img/ambassadører/kevin.png" alt="kevin" />
+          <img
+            class="ambassadorer-img"
+            src="img/ambassadører/kevin.png"
+            alt="kevin"
+          />
           <h3>Kevin Tshiebe</h3>
         </div>
         <div>
-          <img src="img/ambassadører/charlottek.png" alt="charlotte" />
+          <img
+            class="ambassadorer-img"
+            src="img/ambassadører/charlottek.png"
+            alt="charlotte"
+          />
           <h3>Charlotte Kjeldsen Krarup</h3>
         </div>
       </section>
@@ -104,7 +238,7 @@
       <section class="læs_mere">
         <div>
           <img
-            class="profile_img"
+            class="profile_img ambassadorer-img"
             src="img/ambassadører/wafande.png"
             alt="wafande"
           />
@@ -126,7 +260,7 @@
 
         <div>
           <img
-            class="profile_img"
+            class="profile_img ambassadorer-img"
             src="img/ambassadører/charlotteu.png"
             alt="charlotteu"
           />
@@ -151,7 +285,7 @@
 
         <div>
           <img
-            class="profile_img"
+            class="profile_img ambassadorer-img"
             src="img/ambassadører/kevin.png"
             alt="kevin"
           />
@@ -167,7 +301,7 @@
         </div>
         <div>
           <img
-            class="profile_img"
+            class="profile_img ambassadorer-img"
             src="img/ambassadører/charlottek.png"
             alt="charlottek"
           />
@@ -251,9 +385,9 @@
           </div>
         </div>
       </section>
-      <div class="divider-container">
+      <div class="footer-divider-container">
         <svg
-          class="divider"
+          class="footer-divider"
           viewBox="0 0 1179 4"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -277,8 +411,8 @@
           <img src="img/footer/payment6.svg" alt="" class="payment-icon" />
           <img src="img/footer/payment7.svg" alt="" class="payment-icon" />
         </div>
-        <div class="socials">
-          <p class="social-text">Følg os her</p>
+        <div class="footer-socials">
+          <p class="footer-social-text">Følg os her</p>
           <img src="img/footer/social1.svg" alt="" class="social-icon" />
           <img src="img/footer/social2.svg" alt="" class="social-icon" />
           <img src="img/footer/social3.svg" alt="" class="social-icon" />

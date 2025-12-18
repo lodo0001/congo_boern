@@ -1,10 +1,12 @@
-p,
-h2,
+.paragraph,
+.header2,
 h3 {
     margin: 20px;
 }
 
-
+main {
+    overflow-y: hidden;
+}
 
 .center {
     display: flex;
@@ -13,7 +15,7 @@ h3 {
 
 /* Valgmuligheder for donation */
 
-img {
+.img {
     width: 80%;
 }
 
@@ -25,6 +27,26 @@ img {
     margin: 20px;
 }
 
+.valgmulighed-btn {
+    display: flex;
+    flex-direction: column;
+}
+
+.valgmulighed-btn a {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(241, 237, 222, 0.95);
+    color: rgba(35, 48, 81, 1);
+    padding: 20px;
+    text-align: center;
+    font-family: ibm-plex-bold;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 0;
+}
+
 /* Bliv fadder */
 .fadder {
     background-color: rgba(35, 48, 81, 1);
@@ -32,9 +54,10 @@ img {
     grid-template-columns: 1fr;
 }
 
-.fadder p {
-    color: white;
+.fadder-text {
+    color: rgb(255, 255, 255);
 }
+
 
 .fadder h2 {
     color: rgba(242, 134, 39, 1);
@@ -54,6 +77,118 @@ img {
     grid-template-columns: 1fr;
     color: rgba(35, 48, 81, 1);
 }
+
+/* Donation */
+.donation-card {
+    display: block;
+    color: rgb(0, 0, 0);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    background-color: rgba(241, 237, 222, 1);
+    margin: 0 5vw;
+}
+
+.donation-card:last-child {
+    background-color: var(--blue);
+    color: white;
+}
+
+.donation-card h3 {
+    font-family: ibm-plex-bold;
+    font-size: 18px;
+    margin: 0 0 25px 0;
+    text-align: center;
+}
+
+.donation-card h3:first-child {
+    font-size: 32px;
+}
+
+.donation-card p {
+    font-family: ibm-plex;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#fadder-donation-text {
+    font-size: 24px;
+}
+
+.donation-options-fadder {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.donation-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+
+.donation-option {
+    background-color: rgba(255,255,255,0.1);
+    border: 2px solid rgba(255,255,255,0.3);
+    /* color: rgb(0, 0, 0); */
+    padding: 12px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: ibm-plex-bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.donation-option:hover,
+.donation-option.active {
+    background-color: rgba(255,255,255,0.2);
+    border-color: white;
+}
+
+.monthly-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-family: ibm-plex;
+    font-size: 14px;
+}
+
+.donate-submit {
+    background-color: white;
+    color: var(--blue);
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    font-family: ibm-plex-bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.donate-submit:hover {
+    transform: translateY(-2px);
+}
+
+textarea {
+    resize: none;
+}
+
+#bidrag-donation {
+    color: white;
+}
+
+#bidrag-text {
+    color: white;
+}
+
 
 
 /* Medlem */
@@ -116,7 +251,7 @@ form {
     outline: none;
 }
 
-button {
+.button-standard {
     background-color: #f28627;
     color: white;
     border-radius: 20px;
@@ -204,17 +339,17 @@ hr {
 
 @media screen and (min-width: 768px) {
 
-    p {
+    .paragraph {
         font-size: 18px;
     }
 
-    h2 {
+    .header2 {
         font-size: 30px;
     }
 
 
-    h2,
-    p {
+    .header2,
+    .paragraph {
         margin-left: 150px;
         margin-right: 150px;
         width: 80%;

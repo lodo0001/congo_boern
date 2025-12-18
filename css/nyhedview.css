@@ -4,7 +4,7 @@
   height: 300px;
 }
 
-h1 {
+main h1 {
   font-size: 40px;
 }
 
@@ -46,7 +46,7 @@ figure img {
     height: 550px;
   }
 
-  h1 {
+  main h1 {
     font-size: 50px;
   }
 

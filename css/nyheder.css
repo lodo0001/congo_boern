@@ -1,5 +1,5 @@
 /* css til mobil */
-h1 {
+.hero {
   font-size: 35px;
 }
 
@@ -30,8 +30,197 @@ h3 {
   color: black;
 }
 
+.news {
+    background-color: var(--blue);
+    padding: 40px 20px;
+}
+
+.news-container {
+    margin: 0;
+}
+
+.news-subheadline, .news-headline {
+    text-transform: uppercase;
+    font-family: ibm-plex-bold;
+}
+
+.news-headline {
+    color: var(--orange);
+    margin-top: 5px;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.news-subheadline {
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+.news-article-card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.news-img {
+    width: 80vw;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.news-card-container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    gap: 5vw;
+    padding-bottom: 2vw;
+}
+
+.news-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.news-text {
+    color: white;
+    margin: 0;
+    font-family: ibm-plex;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.news-btn {
+    background-color: var(--orange);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-family: ibm-plex-bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    width: fit-content;
+    text-align: center;
+
+}
+
+.news-arrow {
+    display: none;
+}
+
+.news-btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.news-btn-big {
+    padding: 12px 30px;
+}
+
 /* css til computer */
 @media (min-width: 1024px) {
+/* Nyhedssektion */
+.news {
+    padding: 75px 40px;
+}
+
+.news-container {
+    margin-left: 5vw;
+}
+
+/* .news-subheadline, .news-headline {
+    text-transform: uppercase;
+    font-family: ibm-plex-bold;
+} */
+
+.news-headline {
+    /* color: var(--orange); */
+    margin-top: 0;
+    font-size: 42px;
+}
+
+.news-subheadline {
+    /* color: white;
+    margin-bottom: 0; */
+    font-size: 24px;
+}
+
+.news-article-card {
+    /* display: flex; */
+    flex-direction: row;
+}
+
+.news-content {
+    width: 20vw;
+    /* display: flex;
+    flex-direction: column; */
+    justify-content: space-between;
+    align-items: baseline;
+    margin-left: 16px;
+}
+
+.news-arrow {
+    margin: 2vw 0;
+    display: block;
+}
+
+.news-img {
+    height: 100%;
+    width: auto;
+    margin: 0;
+}
+
+.news-text {
+    /* color: white; */
+    margin: 0 16px;
+    /* font-family: ibm-plex; */
+    font-size: 18px;
+}
+
+.tagline {
+    font-weight: 700;
+}
+
+.news-card-container {
+    gap: 3vw;
+}
+
+.news-btn, .partner-btn {
+    background-color: var(--orange);
+    color: white;
+    padding: 5px 5px;
+    border-radius: 30px;
+    font-family: ibm-plex-bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 10vw;
+    text-align: center;
+    margin-left: 16px;
+}
+
+.news svg {
+    margin: 3vw 0;
+}
+
+.news-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
   h6 {
     margin-top: 2px;
   }

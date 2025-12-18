@@ -8,7 +8,7 @@
   padding: 30px;
 }
 
-h2 {
+main h2 {
   font-size: 15px;
 }
 
@@ -56,7 +56,7 @@ input:hover {
   border-color: black;
 }
 
-button {
+main button {
   background-color: #f28627;
   color: white;
   padding: 10px;
@@ -68,7 +68,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+main button:hover {
   background-color: rgb(210, 92, 49);
 }
 
@@ -79,7 +79,7 @@ button:hover {
     height: 450px;
   }
 
-  h1 {
+  main h1 {
     font-size: 45px;
   }
 

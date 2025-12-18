@@ -43,7 +43,7 @@ main {
     margin-bottom: -200px;
   }
 
-  h1 {
+  .hero {
     font-size: 40px;
     padding-bottom: 3rem;
   }
