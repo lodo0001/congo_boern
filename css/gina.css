@@ -1,126 +1,133 @@
-.hero, .history {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 0;
+.hero,
+.history {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0;
 }
 
 .hero-headline {
-    text-align: center;
+  text-align: center;
 }
 
-.hero-headline, .sub-headline {
-    font-family: karu;
-    text-transform: uppercase;
-    font-size: 32px;
+.hero-headline,
+.sub-headline {
+  font-family: karu;
+  text-transform: uppercase;
+  font-size: 32px;
 }
 
 .hero-text {
-    text-align: center;
-    font-family: ibm-plex-med;
+  text-align: center;
+  font-family: ibm-plex-med;
 }
 
-.hero-img, .history-img {
-    width: 100vw;
-    height: auto;
+.hero-img,
+.history-img {
+  width: 100vw;
+  height: auto;
 }
 
 .dream {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .history-img {
-    order: 10;
+  order: 10;
 }
 
 .quote {
-    background-color: var(--blue);
-    color: white;
-    padding: 20px 40px;
-    margin-top: 0;
-    line-height: 28px;
+  background-color: var(--blue);
+  color: white;
+  padding: 20px 40px;
+  margin-top: 0;
+  line-height: 28px;
+  text-align: center;
 }
 
 .dream-content {
-    margin: 0 40px;
+  margin: 0 40px;
 }
 
 .history-text {
-    margin: 16px 40px;
+  margin: 16px 40px;
 }
 
 @media screen and (min-width: 768px) {
-    .hero-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-content: center;
-        height: 80vh;
-    }
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    height: 80vh;
+  }
 
+  .hero-text-container,
+  .dream-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .hero-text-container, .dream-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+  .hero-img {
+    width: auto;
+    justify-self: right;
+  }
 
-    .hero-img {
-        width: auto;
-        justify-self: right;
-    }
+  .history-img {
+    width: auto;
+    justify-self: left;
+  }
 
-    .history-img {
-        width: auto;
-        justify-self: left;
-    }
+  .hero-headline {
+    font-size: 50px;
+  }
 
-    .hero-headline {
-        font-size: 68px;
-    }
+  .hero-text {
+    font-size: 30px;
+    margin-top: 0;
+    text-align: center;
+  }
 
-    .hero-text {
-        font-size: 48px;
-        margin-top: 0;
-    }
+  .quote {
+    padding: 75px 280px;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    margin: 0;
+  }
 
-    .quote {
-        padding: 75px 280px;
-        font-size: 28px;
-        line-height: 50px;
-        text-align: center;
-        margin: 0;
-    }
+  .dream {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    height: 80vh;
+  }
 
-    .dream {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        justify-content: center;
-        height: 80vh;
-    }
+  .history-img {
+    order: 0;
+  }
 
-    .history-img {
-        order: 0;
-    }
+  .sub-headline {
+    font-size: 50px;
+    margin: 0;
+  }
 
-    .sub-headline {
-        font-size: 64px;
-        margin: 0;
-    }
+  .dream-text {
+    font-size: 20px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
 
-    .dream-text {
-        font-size: 28px;
-    }
+  .dream-text:last-child {
+    margin-bottom: 150px;
+  }
 
-    .dream-text:last-child {
-        margin-bottom: 150px;
-    }
-
-    .history-container {
+  .history-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
     margin: 50px 250px;
-    font-size: 24px;
-    }
+    font-size: 20px;
+  }
 }
